@@ -7,8 +7,6 @@ function About() {
       <p>This is the TodoList app v1- part of react crash course</p>
       <p>whoop whoop</p>
     </React.Fragment>
-
-    </div >
   )
 }
 
