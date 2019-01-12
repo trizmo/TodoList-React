@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 export class TodoItem extends Component {
   getStyle = () => {
     return {
-      color: 'darkgrey',
+      color: '#524948',
       backgroundColor: 'lightgrey',
       borderBottom: '1px darkgrey solid',
       padding: '5px 10px',
