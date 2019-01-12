@@ -16,6 +16,7 @@ const linkStyle = {
 }
 
 const headerStyle = {
+  borderRadius: '20px',
   background: '#333',
   color: '#fff',
   textAlign: 'center',
