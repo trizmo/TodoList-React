@@ -7,8 +7,10 @@ export class TodoItem extends Component {
     return {
       color: '#524948',
       backgroundColor: 'lightgrey',
+      borderRadius: '20px',
       borderBottom: '1px darkgrey solid',
       padding: '10px 5px',
+      marginTop: '5px',
       fontFamily: 'Arial',
       textDecoration: this.props.todo.completed ? 
       'Line-through' : 'none'
@@ -42,8 +44,8 @@ TodoItem.propTypes = {
 
 // create the style as a js object, and you can inject it in the jsx in render() inside {btnStyle}
 const btnStyle = {
-  background: '#ff0000',
-  color: '#fff',
+  background: '#9C0000',
+  color: '#B7A2A2',
   border: 'none',
   padding: '1px 5px',
   borderRadius: "50%",
