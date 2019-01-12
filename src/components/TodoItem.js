@@ -8,7 +8,7 @@ export class TodoItem extends Component {
       color: '#524948',
       backgroundColor: 'lightgrey',
       borderBottom: '1px darkgrey solid',
-      padding: '5px 10px',
+      padding: '10px 5px',
       fontFamily: 'Arial',
       textDecoration: this.props.todo.completed ? 
       'Line-through' : 'none'
@@ -33,9 +33,11 @@ export class TodoItem extends Component {
   }
 }
 
-// PropTypes
+// PropTypes: declaring the types of props
 TodoItem.propTypes = {
-  todo: PropTypes.object.isRequired
+  todo: PropTypes.object.isRequired,
+  markComplete: PropTypes.func.isRequired,
+  delTodo: PropTypes.func.isRequired
 }
 
 // create the style as a js object, and you can inject it in the jsx in render() inside {btnStyle}
@@ -43,7 +45,7 @@ const btnStyle = {
   background: '#ff0000',
   color: '#fff',
   border: 'none',
-  padding: '1px 5.5px',
+  padding: '1px 5px',
   borderRadius: "50%",
   curser: 'pointer',
   float: 'right'
