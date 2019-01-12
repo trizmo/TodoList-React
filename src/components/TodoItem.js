@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types';
 
-
+// The Todo Class: This is where we build the each todo
 export class TodoItem extends Component {
   getStyle = () => {
     return {
@@ -10,12 +10,16 @@ export class TodoItem extends Component {
       borderBottom: '1px darkgrey solid',
       padding: '5px 10px',
       fontFamily: 'Arial',
-      textDecoration: this.props.todo.completed ?
+      textDecoration: this.props.todo.completed ? 
       'Line-through' : 'none'
+      
     }
   }
   
+  
   render() {
+    // This shortens this.props.todo.id or this.props.todo.title to just id or title
+    // This binds the markComplete and delTodo to the id
     const {id, title} = this.props.todo;
     return (
       <div style={this.getStyle()}>
@@ -34,6 +38,7 @@ TodoItem.propTypes = {
   todo: PropTypes.object.isRequired
 }
 
+// create the style as a js object, and you can inject it in the jsx in render() inside {btnStyle}
 const btnStyle = {
   background: '#ff0000',
   color: '#fff',
